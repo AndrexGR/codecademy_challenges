@@ -1,4 +1,8 @@
-"You’re part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents. Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases. The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. Your job is to create objects that simulate the DNA of P. aequor for your research team to study."
+"You’re part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents."
+"Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases."
+"The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study."
+"However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive."
+"Your job is to create objects that simulate the DNA of P. aequor for your research team to study."
 
 // Returns a random DNA base
 const returnRandBase = () => {
@@ -25,7 +29,8 @@ const pAequorFactory = (numb, arr) => {
 
     //Requested methods
 
-    //A "Mutation method". This method can be used to randomly mutate the instance's genetic code, 1 base at a time. Each time it returns the new mutated code.
+    //A "Mutation method".
+    //This method can be used to randomly mutate the instance's genetic code, 1 base at a time. Each time it returns the new mutated code.
     mutate() {
       let mutation = returnRandBase();
       const chosenIndex = Math.floor(Math.random() * 15);
@@ -37,7 +42,8 @@ const pAequorFactory = (numb, arr) => {
       return this.dna
     },
 
-    //A "DNA comparison method". This method takes 2 instance' dna codes and evaluates the homology level between them, but log the results instead of returning them.
+    //A "DNA comparison method".
+    //This method takes 2 instance' dna codes and evaluates the homology level between them, but log the results instead of returning them.
     compareDNA(pAequor) {
       console.log(`Comparing genetic codes of pA-${pAequor.specimenNum} and pA-${this.specimenNum} instances.`);
       console.log(`pA-${this.specimenNum}'s DNA code: ` + this.dna);
@@ -56,7 +62,8 @@ const pAequorFactory = (numb, arr) => {
       console.log(`Analysis results: pA-${pAequor.specimenNum} shares ${match}% of pA-${this.specimenNum}'s DNA.`);
     },
 
-    //A "Survival method". This method is a boolean: It evaluates the instance's DNA base composition and returns "true" only if it has a 60% C/G content:
+    //A "Survival method".
+    //This method is a boolean: It evaluates the instance's DNA base composition and returns "true" only if it has a 60% C/G content:
     willLikelySurvive() {
       let survivalTest = 0;
       for (let i = 0; i < this.dna.length; i++) {
@@ -72,7 +79,8 @@ const pAequorFactory = (numb, arr) => {
       }
     },
 
-    //A "Complementary strand replication method". It creates and returns a complementary strand of the instance's DNA code.
+    //A "Complementary strand replication method".
+    //It creates and returns a complementary strand of the instance's DNA code.
     complementStrand() {
       const templateRule = 'ATCG';
       const complementRule = 'TAGC';
@@ -91,7 +99,8 @@ const pAequorFactory = (numb, arr) => {
 }
 
 //
-//A pAequor mass-creator function. Here i use both the "mockUpStrand" and "pAequorFactory" functions for generating an array containing "quantity" pAequor instances.
+//A pAequor mass-creator function.
+//Here i use both the "mockUpStrand" and "pAequorFactory" functions for generating an array containing "quantity" pAequor instances.
 const createInstance = (quantity) => {
   const arrayOfInstances = [];
   for (let i = 0; i < quantity; i++) {
