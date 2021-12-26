@@ -18,10 +18,10 @@ function primeFinder(n) {
         // no: "counter" is a prime number. This will triger only when all prime numbers on "primeNumbArray" have been tested
         primeNumbArray.push(counter)
       }
-      if (primeNumbArray[index] && counter % primeNumbArray[index]) {
+      if (counter % primeNumbArray[index]) {
         index++
       } else {
-        // yes: counter is a multiple of a prime number already stored.
+        // yes: counter is a multiple of a prime number already stored OR a prime number already stored
         counter++;
         loopSwitch = false
       }
