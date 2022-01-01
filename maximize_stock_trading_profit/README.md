@@ -7,7 +7,7 @@ Given the daily values of a stock, create a function called `maxProfitDays()` th
 
 A list of integers will represent the stock price at the beginning or _“opening bell”_ of each day for a week. You are required to buy and sell only once. You also must buy a stock before selling it.
 
-For example, given the list `[7, 11, 60, 25, 150, 75, 31, 120]`, you can assume that `index 0` represents "day 0" and `index 7` represents "day 7". In this case, purchasing on day 1 and selling on day 4 would yield the most profit. If we were to call `maxProfitDays([17, 11, 60, 25, 150, 75, 31, 120])`, the function would return `[1, 4]`.
+For example, given the list `[17, 11, 60, 25, 150, 75, 31, 120]`, you can assume that `index 0` represents "day 0" and `index 7` represents "day 7". In this case, purchasing on day 1 and selling on day 4 would yield the most profit. If we were to call `maxProfitDays([17, 11, 60, 25, 150, 75, 31, 120])`, the function would return `[1, 4]`.
 
 This challenge was reported to have been asked at interviews with Google and Amazon. If you’ve covered the material in **"Pass the Technical Interview with JavaScript"** or an equivalent, you should be able to solve this challenge.
 
