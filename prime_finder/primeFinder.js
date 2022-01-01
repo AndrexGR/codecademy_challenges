@@ -22,5 +22,7 @@ function primeFinder(n) {
   return primeNumbs
 }
 
+console.log(primeFinder(11));
+
 // Leave this so we can test your code:
 module.exports = primeFinder;
